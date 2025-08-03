@@ -30,6 +30,12 @@ a {
 .header {
     min-height: 100vh;
     background: var(--header-bg);
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -76,4 +82,36 @@ a {
 .logo__brand--small {
     font-size: 1.2rem;
     font-weight: 300;
+}
+
+.navbar {
+
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 4px 21px;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.navbar__link:hover,
+.navbar__link--action {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--action:before{
+    position: relative;
+    top: -2px;
+    left: -8px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
 }
