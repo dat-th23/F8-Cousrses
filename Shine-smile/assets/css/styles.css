@@ -3,7 +3,7 @@
 }
 
 :root {
-    --header-bg: #10375C;
+    --header-bg: #10375c;
 }
 
 html {
@@ -15,7 +15,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-/* common */
+/* Common */
 a {
     text-decoration: none;
 }
@@ -30,17 +30,17 @@ a {
     --height: 60px;
 
     display: inline-block;
-    min-width: 250px;
+    min-width: 205px;
     height: var(--height);
     padding: 0 20px;
     border-radius: 99px;
-    border: 1px solid #2E80CE;
+    border: 1px solid #2e80ce;
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
     line-height: var(--height);
     color: #fff;
-    background: #2E80CE;
+    background: #2e80ce;
 }
 
 .btn:hover {
@@ -53,7 +53,7 @@ a {
     font-size: 5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: #10375C;
+    color: #10375c;
 }
 
 .section-desc {
@@ -67,8 +67,8 @@ a {
 /* Header */
 .header {
     min-height: 100vh;
-    background: var(--header-bg);
     padding-top: 30px;
+    background: var(--header-bg);
 }
 
 .logo {
@@ -87,7 +87,7 @@ a {
 .logo__circle::before {
     width: 3em;
     height: 3em;
-    background: #2E80CE;
+    background: #2e80ce;
 }
 
 .logo__circle::after {
@@ -100,7 +100,6 @@ a {
 }
 
 .logo__text {
-    color: #fff;
     margin-left: 0.6em;
     text-align: right;
     line-height: 1.6em;
@@ -108,16 +107,17 @@ a {
 
 .logo__brand {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-weight: 400;
+    color: #fff;
 }
 
 .logo__brand--small {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 300;
 }
 
-/* header top */
+/* Header top */
 .header-top {
     display: flex;
     align-items: center;
@@ -131,18 +131,18 @@ a {
 .header-action__login,
 .navbar__link {
     padding: 4px 21px;
-    font-weight: 300;
     font-size: 1.6rem;
-    color: #c9d3da;
+    font-weight: 300;
+    color: #c9d2da;
 }
 
 .navbar__link:hover,
-.navbar__link--action {
+.navbar__link--active {
     color: #fff;
     text-shadow: 1px 0 0 currentColor;
 }
 
-.navbar__link--action:before {
+.navbar__link--active::before {
     position: relative;
     top: -2px;
     left: -8px;
@@ -168,7 +168,7 @@ a {
     min-width: 104px;
 }
 
-/* hero */
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
@@ -189,7 +189,7 @@ a {
     font-size: 7rem;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .hero__desc {
@@ -197,7 +197,7 @@ a {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #c9d3da;
+    color: #c9d2da;
 }
 
 .hero__row {
@@ -210,7 +210,7 @@ a {
     margin-left: 38px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #fff;
+    color: #ffffff;
 }
 
 .hero__images {
@@ -224,6 +224,11 @@ a {
     height: 540px;
     border-radius: 6px;
     object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-right: -6px;
 }
 
 .hero__img:last-child {
@@ -241,6 +246,12 @@ a {
     text-align: center;
 }
 
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .service__row {
     display: flex;
     align-items: center;
@@ -256,14 +267,14 @@ a {
 }
 
 .service__list {
-    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
-/* service item */
+/* Service item */
 .service-item {
     display: flex;
     width: 470px;
-    padding: 12px;
+    padding: 22px;
     border-radius: 10px;
     background: #fff;
     transition: 0.25s;
@@ -274,8 +285,7 @@ a {
     box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
 }
 
-.service-item:hover,
-.service-item__icon {
+.service-item:hover .service-item__icon {
     background: #2e80ce;
     color: #fff;
 }
@@ -288,7 +298,8 @@ a {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color: #eff6fd;
+    color: #10375c;
+    background: #eff6fd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
     transition: 0.25s;
 }
