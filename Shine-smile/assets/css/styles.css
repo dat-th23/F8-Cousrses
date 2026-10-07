@@ -83,7 +83,7 @@ a {
     transition: 0.25s;
 }
 
-.control_btn:hover {
+.control__btn:hover {
     color: #fff;
     border-color: #2e80ce;
     background: #2e80ce;
